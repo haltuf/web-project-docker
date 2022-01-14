@@ -1,0 +1,1 @@
+docker-compose -p example up -d --build --force-recreate

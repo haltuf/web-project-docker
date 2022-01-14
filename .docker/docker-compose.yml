@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  php:
+    container_name: example
+    image: example_php
+    build: build/php
+    volumes:
+      - ../:/var/www/html
+    ports:
+      - 80:80
+    environment:
+      - NETTE_DEBUG=1
+      - COMPOSER_AUTH=${COMPOSER_AUTH}
+    links:
+      - database
+
+  database:
+    container_name: example_db
+    image: example_db
+    build: build/database
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: test
+      MYSQL_PASSWORD: test
+      MYSQL_DATABASE: test
+    volumes:
+      - ./build/database/01_create.sql:/docker-entrypoint-initdb.d/01_create.sql
+
+  phpmyadmin:
+    image: phpmyadmin
+    ports:
+      - 8080:80
+    environment:
+      - PMA_HOST=database
+      - PMA_USER=test
+      - PMA_PASSWORD=test
