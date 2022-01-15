@@ -3,9 +3,3 @@
 vendor/
 .idea/
 composer.lock
-app/
-bin/
-config/
-log/
-temp/
-www/
