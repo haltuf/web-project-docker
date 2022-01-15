@@ -13,9 +13,10 @@ Pokud chcete tento poměrně náročný proces přeskočit a prostě to jen spus
 1. Naklonujte si nebo si stáhněte tento repozitář 
 2. Spusťte na svém počítači Docker Desktop. Pokud ho nemáte, nainstalujte si ho.
 3. Spusťte v naklonovaném repozitáři soubor `.docker/up.bat`
-4. Otevřete svůj oblíbený prohlížeč.
-5. Napište do adresního řádku `localhost`. Měla by se objevit typická úvodní stránka z nette/web-project včetně debuggovací lišty.
-6. Napište do adresního řádku `localhost:8080`. Měl by se objevit PHPMyAdmin s jednou tabulkou jménem `user` s jedním záznamem.
+4. Napište v příkazové řádce `docker exec example composer install`
+5. Otevřete svůj oblíbený prohlížeč.
+6. Napište do adresního řádku `localhost`. Měla by se objevit typická úvodní stránka z nette/web-project včetně debuggovací lišty.
+7. Napište do adresního řádku `localhost:8080`. Měl by se objevit PHPMyAdmin s jednou tabulkou jménem `user` s jedním záznamem.
 
 Všechny odpovědi na dotazy co, proč a jak najdete ve videu výše.
 
@@ -34,8 +35,9 @@ If you want to skip the tedious process and just run it, follow these steps:
 1. Clone or download this repo.
 2. Run Docker Desktop on your computer. If you don't have it, install it first.
 3. Run `.docker/up.bat` from this repo.
-4. Open your favourite browser.
-5. Type `localhost` in address bar. The nette/web-project website should open.
-6. Type `localhost:8080` in address bar. The PHPMyAdmin with one table should open.
+4. Type in your command line or terminal: `docker exec example composer install`
+5. Open your favourite browser.
+6. Type `localhost` in address bar. The nette/web-project website should open.
+7. Type `localhost:8080` in address bar. The PHPMyAdmin with one table should open.
 
 All questions about how and why are in detail explained in the video above.
