@@ -26,8 +26,6 @@ services:
       MYSQL_USER: test
       MYSQL_PASSWORD: test
       MYSQL_DATABASE: test
-    volumes:
-      - ./build/database/01_create.sql:/docker-entrypoint-initdb.d/01_create.sql
 
   phpmyadmin:
     image: phpmyadmin

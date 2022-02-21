@@ -1,7 +1,7 @@
 {
-	"name": "nette/web-project",
-	"description": "Nette: Standard Web Project",
-	"keywords": ["nette"],
+	"name": "haltuf/web-project-docker",
+	"description": "Nette: Standard Web Project in Docker",
+	"keywords": ["nette", "docker"],
 	"type": "project",
 	"license": ["MIT", "BSD-3-Clause", "GPL-2.0", "GPL-3.0"],
 	"require": {
